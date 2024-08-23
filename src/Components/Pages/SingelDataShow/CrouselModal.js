@@ -6,7 +6,7 @@ export const CrouselModal = ({ data, }) => {
     const {crouselZoom, setCrouselZoom} = AllState();
 
     const outSideClick = function(e){
-        if (e.target.classList[0] == "crouselZoomMain") {
+        if (e.target.classList[0] === "crouselZoomMain") {
             setCrouselZoom(false);
         }
     }
@@ -39,16 +39,16 @@ export const CrouselModal = ({ data, }) => {
                 interval={5000}
             >
                 <div>
-                    <img src={data.plot_image} />
+                    <img alt="image" src={data.plot_image} />
                 </div>
                 <div>
-                    <img src={data.original_image} />
+                    <img alt="image" src={data.original_image} />
                 </div>
                 <div>
-                    <img src={data.vehicle_image ? data.vehicle_image : data.vehicle.image} />
+                    <img alt="image" src={data.vehicle_image ? data.vehicle_image : data.vehicle.image} />
                 </div>
                 <div>
-                    <img src={data.gif ? data.gif : data.gif} />
+                    <img alt="image" src={data.gif ? data.gif : data.gif} />
                 </div>
             </Carousel>
             </div>

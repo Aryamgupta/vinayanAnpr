@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import focusImg from "./Images/focus.png";
 import zoomImg from "./Images/zoom.png";
 import minus from "./Images/minux.png";
 import plus from "./Images/plus.png";
@@ -9,15 +8,11 @@ import { NavLink } from "react-router-dom";
 import { AllState } from "Components/Context/Context";
 
 export const Camera = () => {
-  const { getRois, roiDatas, setRoiDatas } = AllState();
-  const [speed, setSpeed] = useState(39);
-  const [distance, setDistance] = useState(300);
-  const [isFullscreen, setIsFullscreen] = useState(false);
+  const { getRois, roiDatas } = AllState();
+  // const [isFullscreen, setIsFullscreen] = useState(false);
   const [zoom, setZoom] = useState(0.5);
-  const [rois, setRois] = useState([]);
   const [imgDimensions, setImgDimensions] = useState({});
 
-  const videoRef = useRef(null);
   const canvasRef = useRef(null);
   const roiCanvasRef = useRef(null);
 
@@ -25,14 +20,14 @@ export const Camera = () => {
     getRois();
   }, []);
 
-  const loadCamera = async function () {
-    try {
-      const { data } = await axios.get(`http://localhost:5000/video_feed`);
-      console.log(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const loadCamera = async function () {
+  //   try {
+  //     const { data } = await axios.get(`http://localhost:5000/video_feed`);
+  //     console.log(data);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
   const zoomFunc = async function (zoom) {
     try {
@@ -50,30 +45,29 @@ export const Camera = () => {
     }
   };
 
-  const toggleFullscreen = () => {
-    setIsFullscreen(!isFullscreen);
-  };
+  // const toggleFullscreen = () => {
+  //   setIsFullscreen(!isFullscreen);
+  // };
 
     useEffect(() => {
       const canvas = canvasRef.current;
       const ctx = canvas.getContext("2d");
-      const roiCanvas = roiCanvasRef.current;
-      const roiCtx = roiCanvas.getContext("2d");
+      // const roiCanvas = roiCanvasRef.current;
+      // const roiCtx = roiCanvas.getContext("2d");
 
       const socket = new WebSocket("ws://192.168.1.16:5001");
 
       socket.onmessage = (event) => {
         const blob = new Blob([event.data], { type: "image/jpeg" });
         const url = URL.createObjectURL(blob);
-        const roiCanvas = roiCanvasRef.current;
 
         const img = new Image();
         img.onload = () => {
           canvas.width = img.width;
           canvas.height = img.height;
           if (
-            img.width != imgDimensions.width ||
-            img.height != imgDimensions.height
+            img.width !== imgDimensions.width ||
+            img.height !== imgDimensions.height
           ) {
             setImgDimensions({ height: img.height, width: img.width });
           }
@@ -134,7 +128,7 @@ export const Camera = () => {
   };
 
   useEffect(() => {
-    const roiCanvas = roiCanvasRef.current;
+    // const roiCanvas = roiCanvasRef.current;
     drawRoIs();
   }, [roiDatas]);
 

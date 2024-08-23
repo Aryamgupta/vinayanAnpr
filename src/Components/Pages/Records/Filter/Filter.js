@@ -1,16 +1,10 @@
 import React, { useEffect, useState } from "react";
 import calender from "./Icons/calender.png";
-import directionn from "./Icons/direction.png";
 import ocrIcon from "./Icons/ocrFilter.png";
-import speed from "./Icons/speed.png";
-import vehCat from "./Icons/vehCat.png";
-import vehTypee from "./Icons/vehType.png";
-import incIcon from "./Icons/inc.png";
-import decIcon from "./Icons/dec.png";
 import { AllState } from "../../../Context/Context";
 
 export const Filter = ({ setIsfilter }) => {
-  const { vehCategoryObj, setLoading, filters, setFilters, fetchAllRecords } =
+  const { filters, setFilters, fetchAllRecords } =
     AllState();
 
   const [startDate, setStartDate] = useState(filters.startDate);

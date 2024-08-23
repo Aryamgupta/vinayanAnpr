@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { AllState } from "Components/Context/Context";
 import { Carousel } from "react-responsive-carousel";
 import demoCar from "../../../Images/demoCar.jpg";
@@ -43,12 +43,12 @@ const Overlay = () => {
             {npBBox && (
               <ImageWithBoundingBox imageUrl={vehImageUrl} coordinatesString={npBBox} />
             )}
-            {!npBBox && <img src={vehImageUrl} alt="Vehicle" />}
+            {!npBBox && <img alt="imae" src={vehImageUrl}/>}
           </div>
           <div className="crouselDiv">
             <h2>Number Plate Image</h2>
             
-            <img src={demoOrc} alt="Number Plate"  className='overLayNumberPlate'  />
+            <img alt="imae" src={demoOrc} className='overLayNumberPlate'  />
           </div>
         </Carousel>
       </div>

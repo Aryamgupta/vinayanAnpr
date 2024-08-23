@@ -1,5 +1,5 @@
-import * as axios from "axios";
-import React, { useEffect, useState } from "react";
+
+import React, {  useState } from "react";
 import { AllState } from "../../Context/Context";
 
 const ImageSetting = () => {

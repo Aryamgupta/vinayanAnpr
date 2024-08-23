@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useState } from "react";
 
 const AllContext = createContext();
 // direction,
@@ -85,7 +85,7 @@ const AllProvider = ({ children }) => {
       // Event listener for general messages (if any)
       eventSource.onmessage = (event) => {
         try {
-          const parsedData = JSON.parse(event.data);
+        //   const parsedData = JSON.parse(event.data);
           // console.log(par)
         } catch (error) {
           console.log("Failed to parse general SSE data", error);
@@ -169,7 +169,7 @@ const AllProvider = ({ children }) => {
         await getAnprGenSetting();
       }
 
-      const data = await response.json();
+      // const data = await response.json();
     } catch (error) {
       console.log({ "Error Occurred": error });
     }
@@ -271,6 +271,7 @@ const AllProvider = ({ children }) => {
           },
         }
       );
+      console.log(response)
       await fetchAllRecords();
     } catch (error) {
       console.log({ "Error Occured": error });
@@ -384,6 +385,7 @@ const AllProvider = ({ children }) => {
         setOverlay,
         roiDatas, setRoiDatas,
         getRois,
+        postRois
       }}
     >
       {children}

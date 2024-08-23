@@ -2,11 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import "./roiC.css";
 import { NavLink } from "react-router-dom";
 import { AllState } from "Components/Context/Context";
-import deleteICon from "./images/delete.svg";
 
 const RoiMainComponent = () => {
-  const { roiDatas, getRois } = AllState();
-  const videoRef = useRef(null);
+  const {  getRois } = AllState();
   const canvasRef = useRef(null);
   const drawingCanvasRef = useRef(null); // New canvas for drawing lines
   const containerRef = useRef(null);

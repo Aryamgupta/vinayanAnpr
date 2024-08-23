@@ -1,21 +1,11 @@
 import React, { useEffect, useState } from "react";
 import logoImg from "../../../Images/logo.svg";
-import { toast } from "react-toastify";
-import PinInput from "react-pin-input";
-// import policeLogo from "./Icons/policeSolgon.png";
-import goBackSol from "./Icons/ph_arrow-up-bold.png";
-import enterGoBack from "./Icons/ph_arrow-up-bold (1).png";
-import backspace from "./Icons/Backspace.png";
-import ReactCodeInput from "react-code-input";
-import { StatefulPinInput } from "react-input-pin-code";
 import { useNavigate } from "react-router-dom";
 import { AllState } from "../../Context/Context";
 import policeLogo from "./Icons/iconLogo.svg";
 import axios from "axios";
 
 const Login = ({ setIsNavBar }) => {
-  const { loading, setLoading,getAnprGenSetting } = AllState();
-  const [isDialPadOpen, setIsDialPadOpen] = useState(false);
   const [selectedUser, setSelectedUser] = useState(0);
   const [loginPassword, setloginPassword] = useState("");
 
@@ -60,7 +50,7 @@ const Login = ({ setIsNavBar }) => {
   return (
     <div className="loginMainBox">
       <div className="loginMainInfo">
-        {/* <img src={logoImg} /> */}
+        {/* <img alt="imae" src={logoImg} /> */}
         <div className="loginDetails">
           <h3>
             Log In <span>As</span>
@@ -86,7 +76,7 @@ const Login = ({ setIsNavBar }) => {
               value={loginPassword}
               type="password"
               onClick={(e) => {
-                setIsDialPadOpen(true);
+                // setIsDialPadOpen(true);
               }}
               //  style={{borderBottom:"1px solid rgba(42, 82, 152, 0.3)",width:"100%",height:"50px"}}
               placeholder="Enter Password"
@@ -110,7 +100,7 @@ const Login = ({ setIsNavBar }) => {
       </div>
 
       <div className="dailPadMain">
-        <img
+        <img alt="imae"
           src={logoImg}
           onClick={() => {
             handleRefresh();
@@ -121,7 +111,7 @@ const Login = ({ setIsNavBar }) => {
           VINAYAN (INDIA) CONSULTING AND SERVICES PVT. LTD.
         </p>
         <div className="otherDialPad">
-          <img src={policeLogo} />
+          <img alt="imae" src={policeLogo} />
           <p>DELHI TRAFFIC POLICE</p>
         </div>
       </div>

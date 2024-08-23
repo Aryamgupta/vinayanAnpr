@@ -1,6 +1,6 @@
 import React from 'react'
 import vinayanlogo from '../../../Images/logo.svg';
-import { NavLink, Outlet, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { AllState } from '../../Context/Context';
 
 const Navbar = () => {
@@ -10,7 +10,7 @@ const Navbar = () => {
   const { setSingleView } = AllState();
   return (
     <div className='mainNavBar'>
-      <img src={vinayanlogo}  onClick={()=>{handleRefresh()}} style={{cursor:"pointer" , height:"60px"}}/>
+      <img alt="imae" src={vinayanlogo}  onClick={()=>{handleRefresh()}} style={{cursor:"pointer" , height:"60px"}}/>
       <div className='allLinks'>
         <NavLink to="/dashboard"
           onClick={() => {

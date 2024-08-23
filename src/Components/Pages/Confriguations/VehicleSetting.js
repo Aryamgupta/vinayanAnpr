@@ -1,13 +1,4 @@
-import React, { useEffect, useState } from "react";
-import car from "./Icons/prime_car.png";
-import mgv from "./Icons/iconoir_delivery-truck.png";
-import bus from "./Icons/ion_bus-outline.png";
-import truck from "./Icons/mynaui_truck.png";
-import twowheeler from "./Icons/material-symbols_two-wheeler-outline-rounded.png";
-import auto from "./Icons/fluent_vehicle-car-profile-ltr-24-regular.png";
-import incIcon from "./Icons/inc.png";
-import decIcon from "./Icons/dec.png";
-import * as axios from "axios";
+import React, {  useState } from "react";
 import { AllState } from "../../Context/Context";
 
 const VehicleSetting = ({ setLoading }) => {

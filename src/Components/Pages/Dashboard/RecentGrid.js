@@ -12,10 +12,10 @@ const RecentGrid = ({data}) => {
       <div className="mainGridItem" key="er">
       
         <div className="gridMiddle">
-          <img src={demoCar} />
-          {/* <img src={`${process.env.REACT_APP_BASE_URL}/images/${data.base_path}/${data.veh_image_name}`} /> */}
-            <img className="gridROcrNumber" src={demoOcr} />
-            {/* <img className="gridOcrNumber" src={`${process.env.REACT_APP_BASE_URL}/images/${data.base_path}/${data.np_image_name}`} /> */}
+          <img alt="imae" src={demoCar} />
+          {/* <img alt="imae" src={`${process.env.REACT_APP_BASE_URL}/images/${data.base_path}/${data.veh_image_name}`} /> */}
+            <img alt="imae" className="gridROcrNumber" src={demoOcr} />
+            {/* <img alt="imae" className="gridOcrNumber" src={`${process.env.REACT_APP_BASE_URL}/images/${data.base_path}/${data.np_image_name}`} /> */}
           
         </div>
         <div className="gridBottom">

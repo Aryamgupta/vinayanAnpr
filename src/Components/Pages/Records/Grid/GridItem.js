@@ -7,7 +7,7 @@ import serverIcon from "./Images/server.svg";
 import demoOcr from "../../../../Images/demoOcr.jpg";
 
 const GridItem = ({ e }) => {
-  const { setTimeString, vehCategoryObj, setSingleView, recordData,capitalizeFirstLetter,deleteRecord,overlay, setOverlay } =
+  const { setTimeString, capitalizeFirstLetter,deleteRecord, setOverlay } =
     AllState();
 
 
@@ -19,10 +19,10 @@ const GridItem = ({ e }) => {
         <div className="gridTop">
           <div>
             <button>
-              <img src={locationIcon} />
+              <img alt="imae" src={locationIcon} />
             </button>
             <button>
-              <img src={serverIcon} />
+              <img alt="imae" src={serverIcon} />
             </button>
           </div>
           <div>
@@ -30,7 +30,7 @@ const GridItem = ({ e }) => {
           </div>
           <div>
             <button onClick={()=>{deleteRecord(e.id)}}>
-              <img src={deleteIcon} />
+              <img alt="imae" src={deleteIcon} />
             </button>
           </div>
         </div>
@@ -39,12 +39,12 @@ const GridItem = ({ e }) => {
             <p>{e.type}</p>
             <p>{capitalizeFirstLetter(e.category)}</p>
           </span>
-          <img src={demoCar} />
-          {/* <img src={`${process.env.REACT_APP_BASE_URL}/images/${e.image_path}/${e.vehicle_image}`} /> */}
+          <img alt="imae" src={demoCar} />
+          {/* <img alt="imae" src={`${process.env.REACT_APP_BASE_URL}/images/${e.image_path}/${e.vehicle_image}`} /> */}
 
 
-            <img className="gridOcrNumber" src={demoOcr} />
-            {/* <img className="gridOcrNumber" src={`${process.env.REACT_APP_BASE_URL}/images/${e.image_path}/${e.number_plate_image}`} /> */}
+            <img alt="imae" className="gridOcrNumber" src={demoOcr} />
+            {/* <img alt="imae" className="gridOcrNumber" src={`${process.env.REACT_APP_BASE_URL}/images/${e.image_path}/${e.number_plate_image}`} /> */}
           
         </div>
         <div className="gridBottom">

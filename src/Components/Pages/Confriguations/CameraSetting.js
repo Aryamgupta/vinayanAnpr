@@ -1,8 +1,7 @@
-import * as axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import { AllState } from "../../Context/Context";
 
-const CameraSetting = ({}) => {
+const CameraSetting = () => {
   const { generalANPRSetting, setGeneralANPRSetting,postGenSetting } = AllState();
   const [editable, setEditable] = useState(false);
 

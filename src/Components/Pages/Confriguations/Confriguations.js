@@ -1,5 +1,4 @@
-import React, { useDebugValue, useEffect, useState } from "react";
-import { NavLink, Route, Routes } from "react-router-dom";
+import React, {  useEffect, useState } from "react";
 import CameraSetting from "./CameraSetting";
 import ImageSetting from "./ImageSetting";
 import VehicleSetting from "./VehicleSetting";
@@ -9,8 +8,6 @@ const Confriguations = () => {
   const {
     setLoading,
     getAnprGenSetting,
-    generalANPRSetting,
-    setGeneralANPRSetting,
   } = AllState();
   const [settingTab, setSettingTab] = useState("Camera");
 

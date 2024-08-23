@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "http://localhost:3000/static/css/main.f16a4ac6.css",
-    "main.js": "http://localhost:3000/static/js/main.c5245f9e.js",
+    "main.css": "http://localhost:3000/static/css/main.480ff202.css",
+    "main.js": "http://localhost:3000/static/js/main.bea2ca00.js",
     "static/js/453.01ceeeb0.chunk.js": "http://localhost:3000/static/js/453.01ceeeb0.chunk.js",
     "static/media/demoCar.png": "http://localhost:3000/static/media/demoCar.a2dd620669458b9bba40.png",
-    "static/media/logo.svg": "http://localhost:3000/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/logo.svg": "http://localhost:3000/static/media/logo.0bfb642f2d95a9a9bb355e7e66693315.svg",
     "static/media/demoCar.jpg": "http://localhost:3000/static/media/demoCar.0268e0caa761a6f9e26a.jpg",
     "static/media/Montserrat-BlackItalic.ttf": "http://localhost:3000/static/media/Montserrat-BlackItalic.9be75be0721b5c54a837.ttf",
     "static/media/Montserrat-BoldItalic.ttf": "http://localhost:3000/static/media/Montserrat-BoldItalic.a169c71c1eb466896fe1.ttf",
@@ -24,17 +24,13 @@
     "static/media/Montserrat-Thin.ttf": "http://localhost:3000/static/media/Montserrat-Thin.9a7aece9cfe235bc0920.ttf",
     "static/media/iconLogo.svg": "http://localhost:3000/static/media/iconLogo.8ea13021c63efc2d248adf790527c61b.svg",
     "static/media/demoOcr.png": "http://localhost:3000/static/media/demoOcr.fed5b8b86d094ba20958.png",
-    "static/media/delete.svg": "http://localhost:3000/static/media/delete.13c7ff897648646db86187739fc1a0b6.svg",
-    "static/media/server.svg": "http://localhost:3000/static/media/server.4ea1231f996016fd10189f1c86f9ef62.svg",
-    "static/media/location.svg": "http://localhost:3000/static/media/location.47c2f0511e58a0ff7ce807c79ca0c5ab.svg",
     "index.html": "http://localhost:3000/index.html",
-    "static/media/diabledBackNormal.svg": "http://localhost:3000/static/media/diabledBackNormal.cd8e67ee808c68596b8ea471307f330a.svg",
-    "main.f16a4ac6.css.map": "http://localhost:3000/static/css/main.f16a4ac6.css.map",
-    "main.c5245f9e.js.map": "http://localhost:3000/static/js/main.c5245f9e.js.map",
+    "main.480ff202.css.map": "http://localhost:3000/static/css/main.480ff202.css.map",
+    "main.bea2ca00.js.map": "http://localhost:3000/static/js/main.bea2ca00.js.map",
     "453.01ceeeb0.chunk.js.map": "http://localhost:3000/static/js/453.01ceeeb0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f16a4ac6.css",
-    "static/js/main.c5245f9e.js"
+    "static/css/main.480ff202.css",
+    "static/js/main.bea2ca00.js"
   ]
 }

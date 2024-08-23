@@ -1,39 +1,26 @@
 import React, { useEffect, useState } from "react";
-import { Table } from "./Table/Table";
-import { Grid } from "./Grid/Grid";
-import exportIcon from "./Icons/exportIcon.png";
 import fillterIcon from "./Icons/fillterIcon.png";
 import refreshIcon from "./Icons/refreshIcon.png";
-import gridV from "./Icons/gridV.png";
-import listV from "./Icons/listV.png";
 import page1 from "./Icons/pagination1.png";
 import page2 from "./Icons/pagination2.png";
-import * as axios from "axios";
-import { GifOverlay } from "./GifOverlay";
-import { SingleShow } from "../SingelDataShow/SingleShow";
 import { Filter } from "./Filter/Filter";
 import { AllState } from "../../Context/Context";
 
 const Records = () => {
   
   const {
-    setTimeString,
-    vehCategoryObj,
     singleView,
-    setSingleView,
-    setLoading,
     fetchAllRecords,
-    recordData,
-    currentPage, setCurrentPage,totalPage,setFilters
+    currentPage, setCurrentPage,totalPage
   } = AllState();
 
-  const [gridView, setGridView] = useState(true);
+  // const [gridView, setGridView] = useState(true);
   const [isfilter, setIsfilter] = useState(false);
-  const [pagination, setPagination] = useState(1);
+  // const [pagination, setPagination] = useState(1);
 
-  const exportFunc = function (e) {
-    console.log(e);
-  };
+  // const exportFunc = function (e) {
+  //   console.log(e);
+  // };
 
 
  
@@ -61,7 +48,7 @@ const Records = () => {
                   transition: "all 0.5s ease",
                 }}
               >
-                {gridView ? <img src={listV} /> : <img src={gridV} />}
+                {gridView ? <img alt="imae" src={listV} /> : <img alt="imae" src={gridV} />}
               </div> */}
               <button
                 onClick={(e) => {
@@ -69,7 +56,7 @@ const Records = () => {
                   setIsfilter(true);
                 }}
               >
-                <img src={fillterIcon} />
+                <img alt="imae" src={fillterIcon} />
                 Filters
               </button>
               
@@ -79,47 +66,47 @@ const Records = () => {
                 }}
               >
                 Export
-                <img src={exportIcon} />
+                <img alt="imae" src={exportIcon} />
               </button> */}
             </div>
             <div className="recordNavRightPart">
               <div className="paginationDiv">
                 <button
                   onClick={(e) => {
-                    if(currentPage == 1){
+                    if(currentPage === 1){
                       return ;
                     }
                     setCurrentPage(currentPage-1);
                   }}
-                  disabled={currentPage== 1}
+                  disabled={currentPage=== 1}
                 >
-                  <img src={page1} />
+                  <img alt="imae" src={page1} />
                 </button>
                 <p className="selectedp">{currentPage}</p>
                 <p>/</p>
                 <p>{totalPage}</p>
                 <button
                   onClick={(e) => {
-                    if(currentPage == totalPage){
+                    if(currentPage === totalPage){
                       return;
                     }
                     setCurrentPage(currentPage+1);
                   }}
-                  disabled={currentPage == totalPage}
+                  disabled={currentPage === totalPage}
                 >
-                  <img src={page2} />
+                  <img alt="imae" src={page2} />
                 </button>
               </div>
               <button onClick={()=>{fetchAllRecords()}}>
                 {" "}
-                <img src={refreshIcon} /> Refresh
+                <img alt="imae" src={refreshIcon} /> Refresh
               </button>
             </div>
           </div>
-          {!gridView ? <Table /> : <Grid />}
+          {/* {!gridView ? <Table /> : <Grid />} */}
         </div>
       ) : (
-        <SingleShow id={singleView} />
+       <div></div>
       )}
       {isfilter && <Filter setIsfilter={setIsfilter} />}
     </>

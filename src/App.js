@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Login from "../src/Components/Pages/Login/Login";
 import {
@@ -12,13 +11,12 @@ import Confriguations from "./Components/Pages/Confriguations/Confriguations";
 import Profile from "./Components/Pages/Profile/Profile";
 import Navbar from "./Components/Pages/Navbar/Navbar";
 import { useState } from "react";
-import { Loading } from "./Components/Loading/Loading";
 import { AllState } from "./Components/Context/Context";
 import RoiMainComponent from "Components/Pages/RoiPart/RoiMainComponent";
 import Overlay from "Components/Pages/Overlay/Overlay";
 
 function App() {
-  const { loading, setLoading,setOverlay,overlay } = AllState();
+  const { overlay } = AllState();
   // const location = useLocation();
   const [isNavBar, setIsNavBar] = useState(true);
 
@@ -42,7 +40,6 @@ function App() {
           </Routes>
         </BrowserRouter>
         {overlay && <Overlay />}
-        {/* <MainPage/> */}
       </div>
     </>
   );

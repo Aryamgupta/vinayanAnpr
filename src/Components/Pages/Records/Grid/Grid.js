@@ -5,7 +5,7 @@ import GridItem from "./GridItem";
 
 export const Grid = () => {
 
-  const {setTimeString, vehCategoryObj ,setSingleView,recordData } = AllState();
+  const {recordData } = AllState();
 
   return (
     <div className="mainGridDiv">
