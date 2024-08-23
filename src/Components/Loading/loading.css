@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.laodingAnimation>div{
+    width: 46px;
+    
+    /* background-color: rgb; */
+    height: 46px;
+    background-image: url("./Svgs/1.png");
+    background-size: center center;
+    background-repeat: no-repeat;
+    animation: mymove 5s infinite;
+    
+  }
+  
+
+@keyframes mymove {
+    0% {background-image: url("./Svgs/1.png");}
+    12.5% {background-image: url("./Svgs/2.png");}
+    25%{background-image: url("./Svgs/3.png");}
+    37.5%{background-image: url("./Svgs/4.png");}
+    50%{background-image: url("./Svgs/5.png");}
+    62.5%{background-image: url("./Svgs/6.png");}
+    75%{background-image: url("./Svgs/7.png");}
+    87.5%{background-image: url("./Svgs/8.png");}
+    100%{background-image: url("./Svgs/9.png");}
+  }

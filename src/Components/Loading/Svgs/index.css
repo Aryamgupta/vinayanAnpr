@@ -1,0 +1,141 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.printMainContainer{
+    /* width: 100%; */
+    width: 600px;
+    /* height: 100vh; */
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logoImgClass{
+    /* Frame 26085489 */
+    width: 50px;
+    height: 50px;
+
+background: #444444;
+border-radius: 100%;
+
+}
+
+.mainImgClass{
+    width: 80%;
+    /* height: 50%; */
+
+    min-height: 400px;
+
+    margin: 20px 0 5px;
+background: #444444;
+}
+
+.plateImgClass{
+    width: 200px;
+    height: 60px;
+    background: #444444;
+    margin: 0 auto 0 10%;
+}
+
+.allEnteries{
+    width: 100%;
+    margin:  20px 0;
+border-top: 0.3px solid #C4C4C4;
+}
+
+.allEnteries>div{
+    padding: 10px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* height: 80px; */
+}
+
+.allEnteries>div>label{
+    /* Frame 26085519 */
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 20px;
+/* identical to box height */
+letter-spacing: -0.02em;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+
+}
+
+.allEnteries>div>div{
+    /* Line 6 */
+
+    width: 80%;
+height: 100%;
+
+border-bottom: 0.5px solid #DCDCDC;
+
+}
+
+.signP{
+    /* Signature */
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 10px;
+/* identical to box height */
+letter-spacing: -0.02em;
+
+color: #000000;
+margin: 20px 0 0 auto;
+
+
+}
+
+body{
+    /* background-color: rgba(0,0,0,0.215); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+body>div{
+    width: 50px;
+    height: 50px;
+    /* background-color: red; */
+    background-image: url("./1.png");
+    background-size: center center;
+    background-repeat: no-repeat;
+    animation: mymove 5s infinite;
+}
+
+
+@keyframes mymove {
+  0% {background-image: url("./1.png");}
+  12.5% {background-image: url("./2.png");}
+  25%{background-image: url("./3.png");}
+  37.5%{background-image: url("./4.png");}
+  50%{background-image: url("./5.png");}
+  62.5%{background-image: url("./6.png");}
+  75%{background-image: url("./7.png");}
+  87.5%{background-image: url("./8.png");}
+  100%{background-image: url("./9.png");}
+}
+

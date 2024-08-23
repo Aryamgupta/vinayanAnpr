@@ -1,0 +1,139 @@
+.roiMainComponent{
+    flex-grow: 1;
+    /* width: 0%; */
+    /* height: 800px; */
+    display: flex;
+    flex-direction: row;
+    margin:30px;
+
+    /* Frame 26085585 */
+
+position: relative;
+
+
+background: #FFFFFF;
+border-radius: 15px;
+
+    /* background-color: red; */
+}
+
+.roiSidePanel{
+    width: 40%;
+    flex-grow: 1;
+    max-width: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: black; */
+}
+
+.roiVideoPart{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+.roiVideoPart>img{
+    /* background-color: green; */
+}
+
+.roiSidePanel > .roiEntry{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.roiSidePanel > .roiEntry > label{
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 400;
+line-height: 19.5px;
+letter-spacing: -0.02em;
+text-align: left;
+flex: none;
+order: 0;
+flex-grow: 0;
+padding: 0 0 10px 0;
+color: #494949;
+
+}
+
+
+.roiSidePanel > .roiEntry > input{
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+background-color: transparent;
+box-shadow: 0px 1.2px 29.92px 0px #452A7C1A;
+border-bottom: 1px solid #2A52984D;
+width: 100%;
+height: 50px;
+font-family: Montserrat;
+font-size: 19px;
+font-weight: 400;
+line-height: 15.85px;
+text-align: left;
+
+}
+
+.roiColorI{
+    border: 0px !important;
+}
+
+.genrateBtn{
+padding: 14px 45px 14px 45px;
+border-radius: 12px;
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 500;
+line-height: 24.38px;
+text-align: left;
+color: #FFFFFF;
+text-align: center;
+background: #1C519B;
+
+}
+
+.closeBtn{
+
+padding: 10px 83px 10px 83px;
+gap: 10px;
+opacity: 0px;
+
+    width: 100%;
+    text-align: center;
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 400;
+line-height: 24.38px;
+/* text-align: left; */
+color: black;
+}
+
+.roiEntry:last-child{
+    margin: auto 0 0 0;
+    /* background-color: red; */
+}
+
+.roilist{
+    flex-grow: 1;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.roilist > h2{
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0  0  0 ;
+    border-bottom: 2px solid ;
+}
+
+tr , th, td , table{
+   
+
+}

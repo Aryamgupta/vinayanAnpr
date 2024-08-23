@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventSource Test</title>
+</head>
+<body>
+    <script>
+        const eventSource = new EventSource("https://59c8-2405-201-4032-4043-233f-2f45-211e-b955.ngrok-free.app/stream");
+
+        eventSource.onmessage = (event) => {
+            console.log("Message received:", event.data);
+        };
+
+        eventSource.onerror = (err) => {
+            console.error("EventSource failed:", err);
+            eventSource.close();
+        };
+
+        eventSource.onopen = () => {
+            console.log("Connection to the server established.");
+        };
+    </script>
+</body>
+</html>

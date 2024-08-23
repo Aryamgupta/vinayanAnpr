@@ -1,0 +1,34 @@
+.carouselContainer {
+    position: relative;
+  }
+  
+  .crouselStyle {
+    /* Styles for carousel */
+  }
+  
+  .fullscreenBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .fullscreenImageContainer {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .fullscreenImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
