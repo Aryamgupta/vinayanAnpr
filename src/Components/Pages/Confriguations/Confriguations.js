@@ -13,7 +13,7 @@ const Confriguations = () => {
 
   useEffect(() => {
     getAnprGenSetting();
-  }, []);
+  });
 
   const settingTabFunc = function (e) {
     setSettingTab(e.target.innerText);

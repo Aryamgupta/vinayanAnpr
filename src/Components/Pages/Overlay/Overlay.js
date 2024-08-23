@@ -24,7 +24,7 @@ const Overlay = () => {
   }, [setOverlay]);
 
   const vehImageUrl = demoCar; // Replace with the actual image URL if it's dynamic
-  const npBBox = overlay?.np_bbox.replace(/[\[\]]/g, ''); // Assuming np_bbox is a string like "378, 651, 74, 25"
+  const npBBox = overlay?.np_bbox.replace(/[[\]]/g, ''); // Assuming np_bbox is a string like "378, 651, 74, 25"
 
   return (
     <div className="filterMainDiv">

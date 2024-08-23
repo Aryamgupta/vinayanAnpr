@@ -22,6 +22,8 @@ const RoiMainComponent = () => {
 
   useEffect(() => {
     getRois();
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -86,6 +88,7 @@ const RoiMainComponent = () => {
       drawingCanvasRef.current.height
     );
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
     drawLines(); // Redraw all existing lines
 
     // Draw the current line
@@ -129,6 +132,8 @@ const RoiMainComponent = () => {
     return () => {
       socket.close();
     };
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const drawLines = () => {
@@ -152,6 +157,8 @@ const RoiMainComponent = () => {
 
   useEffect(() => {
     drawLines();
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [allLines]);
 
   const sendCoordinatesToBackend = () => {

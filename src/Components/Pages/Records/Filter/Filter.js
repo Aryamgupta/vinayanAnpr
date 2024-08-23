@@ -32,6 +32,8 @@ export const Filter = ({ setIsfilter }) => {
       toTime,
       ocr,
     });
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [startDate, endDate, fromTime, toTime, ocr]);
 
   window.addEventListener("click", function (e) {

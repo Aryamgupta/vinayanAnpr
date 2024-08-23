@@ -1,4 +1,3 @@
-import * as axios from "axios";
 import React, { useEffect, useState } from "react";
 import { AllState } from "../../Context/Context";
 

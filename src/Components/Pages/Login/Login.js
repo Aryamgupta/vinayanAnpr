@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logoImg from "../../../Images/logo.svg";
 import { useNavigate } from "react-router-dom";
-import { AllState } from "../../Context/Context";
 import policeLogo from "./Icons/iconLogo.svg";
 import axios from "axios";
 
@@ -11,6 +10,8 @@ const Login = ({ setIsNavBar }) => {
 
   useEffect(() => {
     setIsNavBar(false);
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const navigate = useNavigate();

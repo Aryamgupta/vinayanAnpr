@@ -18,7 +18,7 @@ export const Camera = () => {
 
   useEffect(() => {
     getRois();
-  }, []);
+  });
 
   // const loadCamera = async function () {
   //   try {
@@ -81,6 +81,8 @@ export const Camera = () => {
       return () => {
         socket.close();
       };
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [roiDatas]);
 
   const drawRoIs = () => {
@@ -130,6 +132,8 @@ export const Camera = () => {
   useEffect(() => {
     // const roiCanvas = roiCanvasRef.current;
     drawRoIs();
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [roiDatas]);
 
   return (

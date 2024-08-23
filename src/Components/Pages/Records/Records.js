@@ -26,11 +26,15 @@ const Records = () => {
  
   useEffect(() => {
     fetchAllRecords();
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentPage]);
 
  
   useEffect(() => {
     fetchAllRecords();
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   
 
